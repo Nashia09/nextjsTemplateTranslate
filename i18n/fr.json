@@ -1,0 +1,16 @@
+{
+    "page.home.head.title": "Exemple de i18n avec Next.js",
+    "page.home.head.meta.description": "Exemple de i18n avec Next.js - Français",
+    "page.home.title": "Bienvenue sur <b>la page d'accueil</b>",
+    "page.home.description": "Vous consultez actuellement la page d'accueil en français.",
+    "get-started": "Commencez en modifiant",
+    "by": "Par",
+    "docs": "Docs",
+    "find-info": "Trouvez des informations approfondies sur les fonctionnalités et l'API de Next.js.",
+    "learn": "Apprendre",
+    "learn-next": "Découvrez Next.js grâce à un cours interactif avec des &nbsp; quiz !",
+    "template": "Modèles",
+    "discover": "Découvrez et déployez des exemples de  projets &nbsp; Next.js pré-configurés.",
+    "deploy": "Déployer",
+    "instantly": "Déployez instantanément votre site Next.js sur une URL partageable avec &nbsp; Vercel."
+}

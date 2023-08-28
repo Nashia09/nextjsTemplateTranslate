@@ -1,0 +1,16 @@
+{
+    "page.home.head.title": "Beispiel für Next.js i18n",
+    "page.home.head.meta.description": "Beispiel für Next.js i18n - Deutsch",
+    "page.home.title": "Willkommen auf <b>der Startseite</b>",
+    "page.home.description": "Sie sehen gerade die Startseite auf Deutsch.",
+    "get-started": "Beginnen Sie, indem Sie bearbeiten",
+    "by": "Von",
+    "docs": "Dokumente",
+    "find-info": "Finden Sie detaillierte Informationen zu Next.js-Funktionen und -APIs.",
+    "learn": "Lernen",
+    "learn-next": "Erfahren Sie mehr über Next.js in einem interaktiven Kurs mit Quizfragen!",
+    "template": "Vorlagen",
+    "discover": "Entdecken und bereitstellen Sie vorkonfigurierte Beispiele für Next.js-Projekte.",
+    "deploy": "Bereitstellen",
+    "instantly": "Bereiten Sie Ihre Next.js-Website sofort auf einer freigebenden URL mit Vercel bereit."
+}
