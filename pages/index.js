@@ -12,23 +12,27 @@ import Link from 'next/link'
 
 export default function Home({ dir }) {
 
-  const router = useRouter();
-  const pathName = usePathname()
-  const [selectedLocale, setSelectedLocale] = useState(router.locale); // Initialize with the default locale
+//   const router = useRouter();
+//   const currentPath = router.asPath;
+//   const [selectedLocale, setSelectedLocale] = useState(router.locale); // Initialize with the default locale
 
-  const handleLocaleChange = (event) => {
-    const newLocale = event.target.value;
-    setSelectedLocale(newLocale);
-    // console.log(pathName);
-
-    router.replace( `/${newLocale}`)
-// router.push(router)
-    //  router.replace(`/${pathName}`, `/${newLocale}`);
-    // router.push(newPath);
-  }
-    
+//   const handleLocaleChange = (event) => {
+//     const newLocale = event.target.value;
+//     setSelectedLocale(newLocale);
+//     const currentPath = router.asPath;
+//     // console.log(pathName);
+//      console.log(`current path>>>${currentPath}`)
+//     // router.replace( `/${encodeURIComponent(newLocale)}`)
+//   const newPath = `/${encodeURIComponent(newLocale)}`;
+  
+//   router.replace(newPath);
+// // router.push(router)
+//     //  router.replace(`/${pathName}`, `/${newLocale}`);
+//     // router.push(newPath);
+//   }
+     const {locales   } = useRouter();
   const intl = useIntl();
-  const  s = selectedLocale
+  // const  s = selectedLocale
 
   const title = intl.formatMessage({ id: "page.home.head.title"})
   const description = intl.formatMessage({ id: "page.home.head.meta.description"})
@@ -50,12 +54,21 @@ export default function Home({ dir }) {
       <header>
         <div>
           <label htmlFor="locale-select">Select Language:</label>
-          <select onChange={handleLocaleChange} value={selectedLocale}>
+          {/* <select onChange={handleLocaleChange} value={selectedLocale}>
             <option value='en'>en</option>
             <option value='fr'>fr</option>
           <option value='de'>de</option>
           </select>
-          {console.log(s)}
+          {console.log(s)} */}
+
+          {[...locales].sort().map((locale) =>(
+              
+            <Link key={locale} href="/" locale={locale}>
+
+              <div id="links">{locale}</div>
+            </Link>
+              
+          ))}
           
         </div>
       </header>
@@ -152,6 +165,10 @@ export default function Home({ dir }) {
             <FormattedMessage id="instantly" />
             </p>
           </a>
+          <Link href="/webviewer">
+       Go to Web Viewer
+        </Link>
+
         </div>
       </main>
     </>
